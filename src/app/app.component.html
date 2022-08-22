@@ -1,0 +1,45 @@
+<h1 class="header-search">Search:</h1>
+<div class="search-container">
+  <div class="form-title">
+    <h3>Title:</h3>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Film title</mat-label>
+      <input matInput placeholder="Title" [(ngModel)]="inputValue" />
+    </mat-form-field>
+  </div>
+
+  <div class="form-type">
+    <h3>Type:</h3>
+
+    <mat-form-field class="example-type-width" appearance="outline">
+      <mat-label>Film type</mat-label>
+      <mat-select [(ngModel)]="typeValue">
+        <mat-option *ngFor="let type of types" [value]="type.value">
+          {{ type.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <button class="btn-search" mat-raised-button (click)="getFilms()">
+    Search
+  </button>
+</div>
+
+<div *ngIf="isFilmsVisible">
+  <h1 class="films-item-header">Films:</h1>
+  <div class="films-item-container">
+    <app-film-item *ngFor="let film of films" [film]="film"> </app-film-item>
+  </div>
+</div>
+
+<mat-paginator
+  *ngIf="films?.length"
+  [length]="filmsResponse.totalResults"
+  [pageSize]="10"
+  [pageIndex]="pageIndex"
+  (page)="getFilms($event)"
+  aria-label="Select page"
+>
+</mat-paginator>

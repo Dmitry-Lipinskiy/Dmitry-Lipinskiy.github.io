@@ -1,0 +1,41 @@
+<h1 class="film-info-header">Film info:</h1>
+<div mat-dialog-content class="film-info-container">
+  <img class="film-info-image" src="{{ data.Poster }}" alt="" />
+
+  <table class="film-info-content">
+    <tr>
+      <th>Title:</th>
+      <td>{{ data.Title }}</td>
+    </tr>
+    <tr>
+      <th>Released:</th>
+      <td>{{ data.Released }}</td>
+    </tr>
+    <tr>
+      <th>Genre:</th>
+      <td>{{ data.Genre }}</td>
+    </tr>
+    <tr>
+      <th>Country:</th>
+      <td>{{ data.Country }}</td>
+    </tr>
+    <tr>
+      <th>Director:</th>
+      <td>{{ data.Director }}</td>
+    </tr>
+    <tr>
+      <th>Writer:</th>
+      <td>{{ data.Writer }}</td>
+    </tr>
+    <tr>
+      <th>Actors:</th>
+      <td>{{ data.Actors }}</td>
+    </tr>
+    <tr>
+      <th>Awards:</th>
+      <td>{{ data.Awards }}</td>
+    </tr>
+  </table>
+</div>
+
+<app-film-info-dialog></app-film-info-dialog>

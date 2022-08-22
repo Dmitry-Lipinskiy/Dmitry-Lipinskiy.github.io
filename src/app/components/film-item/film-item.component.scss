@@ -1,0 +1,40 @@
+.film-container {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 3px solid steelblue;
+  border-radius: 10px;
+  box-shadow: 0 0 1vmin 0.5vmin grey;
+  display: flex;
+}
+
+.film-image {
+  width: 120px;
+  height: 200px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.film-info-block {
+  height: 200px;
+  text-shadow: 1px 1px 2px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-details {
+  width: 160px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+@media (max-width: 360px) {
+	.film-container {
+    width: 250px;
+    padding: 7px;
+  }
+
+  .btn-details {
+    width: 110px;
+  }
+}

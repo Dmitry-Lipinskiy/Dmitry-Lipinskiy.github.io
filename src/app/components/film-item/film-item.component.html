@@ -1,0 +1,18 @@
+<div class="film-container">
+  <img class="film-image" src="{{ film.Poster }}" alt="" />
+
+  <div class="film-info-block">
+    <p>{{ film.Type }}</p>
+    <p>
+      <b>{{ film.Title }}</b>
+    </p>
+    <p>{{ film.Year }}</p>
+    <button
+      class="btn-details"
+      mat-raised-button
+      (click)="getFilmInfo(film.imdbID)"
+    >
+      Details
+    </button>
+  </div>
+</div>
