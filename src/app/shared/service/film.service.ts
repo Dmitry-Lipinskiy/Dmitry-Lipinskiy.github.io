@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IInfo, ISearch } from '../model/film-app.model';
 
-const URL_API = 'http://www.omdbapi.com';
+const URL_API = 'https://www.omdbapi.com';
 const API_KEY = 'ce47be69';
 
 @Injectable({
