@@ -2,6 +2,7 @@ Films site: when uploading, a form appears in which the user enters the name and
 When you click on the search button, a list of 10 films appears. 
 If there are more films, then there is a paginator that shows the number of films and turns the pages. 
 This way the user can select the desired movie and click on the details button to see more detailed information about this film.
+You can view the result in a browser using this link: https://dmitry-lipinskiy.github.io/
 
 # FilmsApp
 
